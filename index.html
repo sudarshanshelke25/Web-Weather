@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box" id="input-box"/>
+                <button class="search-btn" id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- <div class="location-not-found" id="lnf">
+            
+            <div class="image-box">
+                <img src="/assets/404.png" alt="404 Error" class="weather-image" id="weather-img">
+            </div>
+        </div> -->
+
+        <div class="location-not-found" id="lnf">
+            <div class="image-box">
+                <img src="/assets/404.png" alt="404 Error" class="weather-image">
+            </div>
+            <div class="weather-box">
+                <p class="temperature">404</p>
+                <h1 class="description">Sorry, Location Not Found !!</h1>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet-slash"></i>
+                    <div class="text">
+                        <span> 00%</span>
+                        <p>Error</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-virus-slash"></i>
+                    <div class="text">
+                        <span> 0Km/H</span>
+                        <p>Error</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-container" id="weather-container">
+            <div class="image-box">
+                <img src="/assets/cloud.png" alt="Weather Image" class="weather-image" id="weather-img">
+            </div>
+            <div class="weather-box">
+                <p class="temperature" id="temperature">0 <sup>°C</sup></p>
+                <p class="description" id="description"> Light Rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity"> 45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed"> 12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>
